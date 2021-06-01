@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal - Login</title>
+
+    <link href="./assets/pageLogin/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="./assets/pageLogin/img/icon.png" />
+
+</head>
+<body>
+    <main>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Login</legend>
+
+                <label for="email">E-mail</label>
+                <input required autofocus id="inputLogin" type="email" placeholder="exemplo@email.com" name="email">
+
+                <label for="password">Senha</label>
+                <input required id="inputPassword" type="password" placeholder="Senha" name="password">
+
+                <input id="btn" type="submit" value="Login">
+                <p id="cadastro">Não tem login? <a href="/cadastro">Cadastre-se</a></p>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

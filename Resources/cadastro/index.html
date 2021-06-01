@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal - Cadastro</title>
+
+    <link href="./assets/pageCadastro/css/style.css" rel="stylesheet">
+
+    <link rel="icon" href="./assets/pageLogin/img/icon.png" />
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="/cadastro" method="post">
+                    <h1>Bem-Vindo</h1>
+
+                    <label for="email">Nome</label>
+                    <input required class="formatInput" autofocus type="text" placeholder="Nome" name="Nome">
+
+                    <label for="cpf">CPF</label>
+                    <input required class="formatInput" autofocus type="text" title="Formato exigido: xxx.xxx.xxx-xx" pattern="[0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[\-][0-9]{2}" placeholder="xxx.xxx.xxx-xx" name="cpf">
+
+                    <label for="email">E-mail</label>
+                    <input required class="formatInput"  type="email" title="Formato exigido: exemplo@email.com" placeholder="exemplo@email.com" name="email">
+
+                    <label for="password">Senha</label>
+                    <input required class="formatInput" type="password" placeholder="Senha" name="password">
+                    
+                    <ul>
+                        <li>
+                            <input checked type="radio" id="aluno" name="tipoCadastro" value="ALUNO">
+                            <label for="aluno">Aluno</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="funcionario" name="tipoCadastro" value="FUNCIONARIO">
+                            <label for="funcionario">Funcionário</label>
+                        </li>
+                    </ul>
+
+                    <input id="btn" type="submit" value="Cadastrar">
+
+                    <p>Já tem cadastro? <a href="/">Faça login</a></p>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
